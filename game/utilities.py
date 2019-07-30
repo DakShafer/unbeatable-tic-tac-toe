@@ -24,7 +24,7 @@ def check_if_game_over(matrix):
     ]
 
     for direction in winnable_directions:
-        if 'nan' not in direction:
+        if None not in direction:
             n_unique = len(unique(direction))
             if n_unique == 1:
                 return True
